@@ -30,7 +30,7 @@
 			var loc = {};
 			loc.returnValue = false;
 			loc.cache = application.wheels.cache[arguments.category].get(key);
-			if (isDefined("loc.cache") and not loc.cache is not null) {
+			if (isDefined("loc.cache")) {
 				// we found cache and it's still valid
 				loc.returnValue = duplicate(loc.cache); // if it's a struct or object, we don't want to make changes to the cache after returning it
 			}
